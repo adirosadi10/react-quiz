@@ -4,7 +4,7 @@ import { QuizContext } from "../helpers/Context";
 import "../App.css";
 
 function Quiz() {
-  const { score, setScore, gameState, setGameState } = useContext(QuizContext);
+  const { score, setScore, setGameState } = useContext(QuizContext);
   const [currQuestion, setCurrQuestion] = useState(0);
   const [optionChoose, setOptionChoose] = useState("");
   const chooseOption = (option) => {
